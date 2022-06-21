@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <title>頁尾板塊</title>
+   <link href='https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap' rel='stylesheet'>
+   <style>
+       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap');
+       body {
+           font-family: 'Noto Sans TC', sans-serif;
+       }
+       .footer{
+           padding: 150px 0 0;
+           background: linear-gradient(-20deg,#3F5494,#08c7a5);
+       }
+       .container{
+           width: 1200px;
+           display: flex;
+           margin: auto;
+       }
+       .item{
+           width: 0;
+           flex-grow: 1;
+           margin: 0 20px;
+       }
+       .copyright{
+           text-align: center;
+           margin: 150px 0 0;
+           padding: 10px 0;
+           background-color: #3e5293;
+           color: #70f6df;
+       }
+       .item nav{
+           display: flex;
+           flex-direction: column;
+       }
+       .item nav a{
+           color: #fff;
+           padding: 10px;
+           text-decoration: none;
+       }
+       .item  h4{
+           font-size: 24px;
+           color: #fff;
+           border-bottom: 1px dotted #fff;
+           padding-bottom: .5em;
+           margin-bottom: .5em;
+       }
+       .subs form{
+           display: flex;
+           margin: auto 0; 
+       }
+       .subs input[type='text'],.subs input[type='submit']{
+           border: none;
+           padding: 5px 10px;
+       }
+       .subs input[type='text']{
+           flex: 1;
+       }
+       .subs input[type='text']:focus{
+           outline: none;
+       }
+       .subs input[type='submit']{
+           color: #fff;
+           background-color: #3e5293;
+       }
+       .subs{
+           display: flex;
+           flex-direction: column;
+       }
+       
+   </style>
+</head>
+<body>
+    <div class="footer">
+        <div class="container">
+            <div class="item">
+                <h4>關於我們</h4>
+                <nav>
+                    <a href="#"><embed src="/icons/arrow-right-short.svg" type="image/svg+xml" />關於我們1-1</a>
+                    <a href="#"><embed src="/icons/arrow-right-short.svg" type="image/svg+xml" />關於我們1-2</a>
+                    <a href="#"><embed src="/icons/arrow-right-short.svg" type="image/svg+xml" />關於我們1-3</a>
+                    <a href="#"><embed src="/icons/arrow-right-short.svg" type="image/svg+xml" />關於我們1-4</a>
+                </nav>
+            </div>
+            <div class="item">
+                <h4>暴力課程</h4>
+                <nav>
+                    <a href="#"><embed src="/icons/arrow-right-short.svg" type="image/svg+xml" />暴力課程2-1</a>
+                    <a href="#"><embed src="/icons/arrow-right-short.svg" type="image/svg+xml" />暴力課程2-2</a>
+                    <a href="#"><embed src="/icons/arrow-right-short.svg" type="image/svg+xml" />暴力課程2-3</a>
+                    <a href="#"><embed src="/icons/arrow-right-short.svg" type="image/svg+xml" />暴力課程2-4</a>
+                </nav>
+            </div>
+            <div class="item">
+                <h4>課程列表</h4>
+                <nav>
+                    <a href="#"><embed src="/icons/arrow-right-short.svg" type="image/svg+xml" />課程列表3-1</a>
+                    <a href="#"><embed src="/icons/arrow-right-short.svg" type="image/svg+xml" />課程列表3-2</a>
+                    <a href="#"><embed src="/icons/arrow-right-short.svg" type="image/svg+xml" />課程列表3-3</a>
+                    <a href="#"><embed src="/icons/arrow-right-short.svg" type="image/svg+xml" />課程列表3-4</a>
+                </nav>
+            </div>
+            <div class="item subs">
+                <h4>訂閱電子報</h4>
+                <form action="#">
+                    <input type="text" >
+                    <input type="submit" value="訂閱">
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2019
+            大家都能懂得這個網頁怎麼切
+        </div>
+    </div>
+</body>
+</html>

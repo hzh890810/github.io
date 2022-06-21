@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <style>
+    	canvas { 
+            background: #eee; 
+            display: block; 
+            margin: 10px auto; 
+            
+        }
+        .wrap{
+            display: flex;
+            width: 100%;
+        }
+        .wrap .item{
+            padding: 0 10px;
+            background-color: #fa0;
+            width: 100%;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body id="body">
+    <canvas id="myCanvas" width="960" height="540"></canvas><!--建立攻擊目標-->
+    <script src="./apexGame.js"></script>
+   <div class="resoure">
+       <div class="wrap">
+           <div class="item">
+               成績
+           </div>
+           <div class="item">
+                時間
+           </div>
+           <div class="item">
+                完成度
+           </div>
+       </div>
+   </div>
+</body>
+</html>

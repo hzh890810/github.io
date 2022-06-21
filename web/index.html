@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <title>主頁</title>
+    <link href='https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap');
+        body{
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #090909;
+        }
+            h1{
+            color: #fff;
+            background-color: #090909dd;
+            width: 100%;
+            font-size: 100px;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            padding-top: 130px;
+        }
+        .wrap{  
+            margin: auto;
+            width: 100%;
+            max-width: 1400px;
+            display: flex;
+            flex-wrap: wrap;
+            height: 70vh;
+        }
+        .item{
+            width: 400px;
+            text-decoration: none;
+            position: relative;
+            height: 50%;
+            flex:auto;
+            margin: .25em;
+            overflow: hidden;
+        }
+        .item img{
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            transition: .7s ease-in-out;
+        }
+        .item-txt{
+            width: 100%;
+            height: 100%;
+            font-size: 30px;
+            color: #ccc;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #5B63B7;
+            opacity: 0;
+            transition: .3s ease-in;
+        }
+        .item:hover img{
+            transform: scale(1.3);
+        }
+        .item-txt:hover{
+            opacity: .9;
+        }
+        .float-fix{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>#Welconme</h1>
+    <div class="main" >
+      <div class="wrap">
+            <a href="./expanding-cards/expanding-cards.html" class="item">
+                <img src='https://picsum.photos/600/400/?ramdon'/>
+                <div class="item-txt">
+                    <h3>expanding-cards</h3>
+                </div>
+            </a>
+            <a href="./introduction-card/introduction-card.html" class="item">
+                <img src='https://picsum.photos/600/400/?ramdon'/>
+                <div class="item-txt">
+                    <h3>introduction-card</h3>
+                </div>
+            </a>
+            <a href="./typesetting/typesettings.html" class="item">
+                <img src='https://picsum.photos/600/400/?ramdon'/>
+                <div class="item-txt">
+                    <h3>typesetting</h3>
+                </div>
+            </a>
+            <a href="./broken-layout-design/broken-layout-design.html" class="item">
+                <img src='https://picsum.photos/600/400/?ramdon'/>
+                <div class="item-txt">
+                    <h3>broken-layout-design</h3>
+                </div>
+            </a>
+            <a href="./side-menu/side-menu.html" class="item">
+                <img src='https://picsum.photos/600/400/?ramdon'/>
+                <div class="item-txt">
+                    <h3>side-menu</h3>
+                </div>
+            </a>
+            <a href="./purchase-process/purchase-process.html" class="item">
+                <img src='https://picsum.photos/600/400/?ramdon'/>
+                <div class="item-txt">
+                    <h3>purchase-process</h3>
+                </div>
+            </a>
+
+      </div>
+    </div>
+</body>
+</html>

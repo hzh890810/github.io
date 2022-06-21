@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="../reset.css">
+    <title>expanding-cards</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap');
+        body{
+            font-family: 'Noto Sans TC', sans-serif;
+            background-image: linear-gradient(-30deg,#feaecb,#e7597f,#fe8556);
+        }
+        .header{
+            width: 100%;
+            text-align:  center;
+            font-size: 70px;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+        }
+        .banner{
+            width: 100%;
+            max-width: 1400px;
+            height: 100vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            padding:  0 25px;
+            box-sizing: border-box;
+        }
+        .container{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        .item{
+            position: relative;
+            width: 5%;
+            height: 80vh;
+            border-radius: 900px;
+            margin: 0 10px;
+            transition: 1s;
+            cursor: pointer;
+        }
+        .item img{
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+        .item h3{
+            font-size: 26px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #fff;
+            opacity: 0;
+            transition: .7s;
+        }
+        .onclick {
+            flex:  auto;
+        }
+        .homebtn{
+            width: 70px;
+            height: 70px;
+            background-color: #fa0;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 70px;
+            right: 140px;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+        .bi{
+            width: 35px;
+            height: 35px;
+            color: #fff;
+            transition: .3s ease-in;
+        }
+        .bi:hover{
+            transform: scale(1.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <p>expanding-cards</p>
+        </div>
+        <div class="banner">
+            <div class="container">
+                <div class="item" onclick="trs(this.id)" id="0">
+                    <img src='https://picsum.photos/600/400/?ramdon1'/>
+                    <h3>第一頁</h3>
+                </div>
+                <div class="item" onclick="trs(this.id)" id="1">
+                    <img src='https://picsum.photos/600/400/?ramdon12'/>
+                    <h3>第二頁</h3>
+                </div>
+                <div class="item" onclick="trs(this.id)" id="2">
+                    <img src='https://picsum.photos/600/400/?ramdon13'/>
+                    <h3>第三頁</h3>
+                </div>
+                <div class="item" onclick="trs(this.id)" id="3">
+                    <img src='https://picsum.photos/600/400/?ramdon14'/>
+                    <h3>第四頁</h3>
+                </div>
+                <div class="item" onclick="trs(this.id)" id="4" >
+                    <img src='https://picsum.photos/600/400/?ramdon15'/>
+                    <h3>第五頁</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="homebtn" href="./../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+        <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+      </svg>
+    </a>
+    <script src="expanding-cards.js"></script>
+</body>
+</html>
